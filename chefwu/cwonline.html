@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chef Wu’s fantastic dumpling kitchen</title>
+<!-- Links to styling CSS and jquery for "I am here" -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/Sud.css">
+ <body id="part5"> 
+ <h1> Chef Wu’s fantastic dumpling kitchen <button><a href="../wd.html">Return to Sudhir's Portfolio</a></button></h1>
+ <div id="navigation">
+ <ul id ="selections">
+                        <li id="navpart1"><a href="index.html">Introduction</a></li>
+                        <li id="navpart2"><a href="cwmenu.html">Menu</a></li>
+                        <li id="navpart3"><a href="cwgallery.html">Menu gallery</a></li>
+                        <li id="navpart4"><a href="cwlocation.html">Getting here</a></li>
+                        <li id="navpart5"><a href="cwonline.html">Online orders</a></li>
+                    </ul>
+	</div>
+ <!-- javascript to bind "I am here" plugin -->
+<script>
+$(document).ready(function(){
+  var mybodyid = $('body').attr('id');
+  var mynavid = '#nav' + mybodyid;
+  /* e.g. for 3.shtml:
+      mybodyid is 'part3'
+      mynavid  is '#navpart3'
+   */
+  $(mynavid).attr('id','iamhere');
+  console.log("I am at " +mynavid);
+});
+</script>
+  <p>Online ordering being set up through Seamless.com in June 2018</p>
+  <img src="image/1header.jpg" alt="image">
+<footer>
+       <p>Located at 3330 Broadway, NY 10031; Phone: 212-222-4242</p>
+  </footer>            
+ </body>            
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>A4 Design Stencil</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="scss/a4-dist.css">
+</head>
+<body>
+<header>
+	<h1>A4 Design Stencil</h1>
+	<button><a href="../wd.html">Return to Sudhir's Portfolio</a></button>
+		<nav>
+			<ul>
+                <li class="box" id="navpart1"><a href="index.html">Main page</a></li>
+                <li class="box" id="navpart2"><a href="instructions.html">Instructions</a></li>
+                <li class="box" id="navpart3"><a href="files.html">Files to use</a></li>
+            </ul>
+		</nav>
+</header>
+<section class="border">
+  <h2>Customize the framework</h2>
+  <p>Changes to the framework can be made by opening the a4-dist.css file in your folder. You would go to the very top of the file where you see the following paragraph.</p>
+<xmp>
+/*Changes to color and primary size can be made here*/
+:root {
+  --primary-size : 1em;
+  --background-color : #D5C7C7;
+  --border-color : black;
+  --svgcircle-color : #D5C7C7;
+  --button-background-color : black;
+  --footer-background-color : black;
+}
+</xmp>
+  Changes can be made as follows</p>
+  <p>1) primary size used is 1 em and scale has been used relative to this. You could modify the base multiple here.</p>
+  <p>2) background color can be changed here</p>
+  <p>3) border color can be changed here (it remains uniform though)</p>
+  <p>4) the color of the svg filler circles can be changed here</p>
+  <p>5) the button color can be changed here</p>
+  <p>6) the footer color can be changed here</p>
+<h3>Changes to media queries</h3>
+  <p>To change the screen size (px) of the 2 media queries you could go to line 97 of the a4-dist.css file for 900 px and line 113 for 639 px.</p>
+  <p>Please remember to save the file after making your changes</p>
+</section>
+<footer>
+  <p>A4 Design Stencil. Copyright 2019. Sudhir Bhargava.</p>
+</footer> 
+</body>
+</html>

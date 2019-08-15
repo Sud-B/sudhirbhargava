@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chef Wu’s antastic Dumpling kitchen</title>
+  <!-- Link to jquery for "I am here" and CSS for Fancybox, before linking to plugin -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/Sud.css">
+  </head> 
+  <body id="part3">
+  <div id="wrapper"><div id="header">
+  <h1> Chef Wu’s fantastic Dumpling kitchen <button><a href="../wd.html">Return to Sudhir's Portfolio</a></button></h1>
+  </div>
+  </div> 
+ <div id="navigation">
+ <ul id ="selections">
+                        <li id="navpart1"><a href="index.html">Introduction</a></li>
+                        <li id="navpart2"><a href="cwmenu.html">Menu</a></li>
+                        <li id="navpart3"><a href="cwgallery.html">Menu gallery</a></li>
+                        <li id="navpart4"><a href="cwlocation.html">Getting here</a></li>
+                        <li id="navpart5"><a href="cwonline.html">Online orders</a></li>
+                    </ul>
+	</div>
+ <!-- javascript to bind "I am here" plugin -->
+<script>
+$(document).ready(function(){
+  var mybodyid = $('body').attr('id');
+  var mynavid = '#nav' + mybodyid;
+  /* e.g. for 3.shtml:
+      mybodyid is 'part3'
+      mynavid  is '#navpart3'
+   */
+  $(mynavid).attr('id','iamhere');
+  console.log("I am at " +mynavid);
+});
+</script>
+	<div id="maincontent">
+		<div id="menugallery">
+		<p>Selection of soups</p>
+		<ul><li class="menuitem">
+		<a href="image/1hot&soursoupg.jpg" data-fancybox="gallery" data-caption="Hot & Sour Soup" title="Hot & Sour Soup"><img src="image/1hot&soursoup.jpg" alt="img hs soup" /></a>
+		<a href="image/1tofugreenssoupg.jpg" data-fancybox="gallery" data-caption="Tofu & Greens Soup" title="Tofu & Greens Soup"><img src="image/1tofugreenssoup.jpg" alt="img tg soup" /></a>
+		<a href="image/1wontonsoupg.jpg" data-fancybox="gallery" data-caption="Wonton Soup" title="Wonton Soup"><img src="image/1wontonsoup.jpg" alt="img w soup" /></a>
+		</li>
+		<li style="list-style: none; display: inline">
+		<p>Selection of Meat Dumplings</p>
+		</li>
+		<li class="menuitem">
+		<a href="image/2bbqporkg.jpg" data-fancybox="gallery" data-caption="BBQ Pork Dumplings" title="BBQ Pork Dumplings"><img src="image/2bbqpork.jpg" alt=" img bbqpork" /></a>
+		<a href="image/2beefg.jpg" data-fancybox="gallery" data-caption="Beef Dumplings" title="Beef Dumplings"><img src="image/2beef.jpg" alt="img beef" /></a>
+		<a href="image/2chickeng.jpg" data-fancybox="gallery" data-caption="Chicken Dumplings" title="Chicken Dumplings"><img src="image/2chicken.jpg" alt="img chicken" /></a>
+		<a href="image/2fishandroeg.jpg" data-fancybox="gallery" data-caption="Fish & Roe Dumplings" title="Fish & Roe Dumplings"><img src="image/2fishandroe.jpg" alt="img fish" /></a>
+		<a href="image/2lambg.jpg" data-fancybox="gallery" data-caption="Lamb Dumplings" title="Lamb Dumplings"><img src="image/2lamb.jpg" alt="img lamb" /></a>
+		<a href="image/2steamedporkg.jpg" data-fancybox="gallery" data-caption="Steamed Pork Dumplings" title="Steamed Pork Dumplings"><img src="image/2steamedpork.jpg" alt="img stpork" /></a>
+		</li>
+		<li style="list-style: none; display: inline">
+		<p>Selection of Seafood Dumplings</p>
+		</li>
+		<li class="menuitem">
+		<a href="image/3seafoodg.jpg" data-fancybox="gallery" data-caption="Sea food combination Dumplings" title="Sea food combination Dumplings"><img src="image/3seafood.jpg" alt="img seafd" /></a>
+		<a href="image/3shrimpchiveg.jpg" data-fancybox="gallery" data-caption="Shrimp Chive Dumplings" title="Shrimp Chive Dumplings"><img src="image/3shrimpchive.jpg" alt="img shrimpch" /></a>
+		<a href="image/3shrimpsnowpeag.jpg" data-fancybox="gallery" data-caption="Shrimp SnowPea Dumplings" title="Shrimp SnowPea Dumplings"><img src="image/3shrimpsnowpea.jpg" alt="img shrimpsn" /></a>
+		<a href="image/3shrimpspinachg.jpg" data-fancybox="gallery" data-caption="Shrimp Spinach Dumplings" title="Shrimp Spinach Dumplings"><img src="image/3shrimpspinach.jpg" alt="img shrimpsp" /></a>
+		<a href="image/3squidinkg.jpg" data-fancybox="gallery" data-caption="Squid Ink Dumplings" title="Squid Ink Dumplings"><img src="image/3squidink.jpg" alt="img squid" /></a>
+		</li>
+		<li style="list-style: none; display: inline">
+		<p>Selection of Vegetarian Dumplings</p>
+		</li>
+		<li class="menuitem">
+		<a href="image/4chivesradishg.jpg" data-fancybox="gallery" data-caption="Chive Radish Dumplings" title="Chive Radish Dumplings"><img src="image/4chivesradish.jpg" alt="img chradish" /></a>
+		<a href="image/4curriedgreensg.jpg" data-fancybox="gallery" data-caption="Curried Greens Dumplings" title="Curried Greens Dumplings"><img src="image/4curriedgreens.jpg" alt="img cgreens" /></a>
+		<a href="image/4lushgreensg.jpg" data-fancybox="gallery" data-caption="Lush Greens Dumplings" title="Lush Greens Dumplings"><img src="image/4lushgreens.jpg" alt="img lgreens" /></a>
+		<a href="image/4spinachcarrotg.jpg" data-fancybox="gallery" data-caption="Spinach Carrot Dumplings" title="Spinach Carrot Dumplings"><img src="image/4spinachcarrot.jpg" alt="img spcarrot" /></a>
+		<a href="image/4turnipleekg.jpg" data-fancybox="gallery" data-caption="Turnip Leek Dumplings" title="Turnip Leek Dumplings"><img src="image/4turnipleek.jpg" alt="img turnipl" /></a>
+		</li>
+		</ul>
+	</div>
+</div>
+<!-- Link at end of body, to jquery first before linking to plugin -->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.js"></script>
+<footer>
+     <p>Located at 3330 Broadway, NY 10031; Phone: 212-222-4242</p>
+  </footer> 
+</body>   
+</html>

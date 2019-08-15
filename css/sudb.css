@@ -1,0 +1,219 @@
+.initial * {
+  all: initial;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  text-decoration: none;
+} 
+
+/*Header content*/
+header {
+	width: 100%;
+	position: fixed;
+	overflow: auto;
+	background: black;
+	padding: 0.7em;
+}
+h1:hover {
+	color: #FF4C00;
+}
+h2:hover {
+	color: #FF4C00;
+	transform: scaleY(2.1);
+}
+h1, h2 {
+	float: left;
+	color: white;
+	background-color: black;
+}
+h1 {
+	margin: 0.5em 2em 0em 1em;
+	position: fixed;
+}
+h2 {
+	width: 100%;
+	padding: 1em;
+}
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+	background: black;
+	color: white;
+	margin-top: 4em;
+	padding: 0.5em;
+}
+h4 {
+	text-align: center;
+	font-size: 1.5em;
+	background: black;
+	color: white;
+	padding: 0.5em;
+}
+nav {
+	width: 75%;
+	display: inline-block;
+	font-size: 1.3em;
+	padding-top: 0.5em;
+	float: right;
+	background-color: black;
+}
+nav li {
+	display: inline;
+	background-color: white;
+	padding-bottom: 0.3em;
+	text-decoration: none;
+	font-weight: bold;
+	float: right;
+}
+nav a {
+	display: inline;
+	color: black;
+	background-color: white;
+	text-decoration: none;	
+}
+nav a:hover {
+	color: #FF4C00;
+	background-color: black;
+	transform: scaleY(1.8);	
+}
+.block {
+	width: 20%;
+	background-color: black;
+	padding: 1em;
+}
+.main {
+	display: none;
+}
+.intro {
+	margin: 12em 1em 5.5em 1em;
+}
+@media only screen and (max-width: 900px) {
+  nav {
+	width: 75%;
+	display: inline-block;
+	font-size: 0.8em;
+}
+.auto-grid2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-gap: 0 1%;
+	color: black;
+}
+h4 {
+	text-align: left;
+}
+}
+article {
+	float: left;
+	width: 100%;
+}
+aside {
+	float: left;
+	width: 100%;
+}
+img {
+	border: 1em solid black;
+	margin: 3em 0em 5em 3.5em;
+	padding: 0.5em;
+	float: left;
+}
+p {
+	padding: 0.3em;
+	text-decoration: none;
+	color: black;
+	margin: 0.2em;
+	float: clear;
+	font-weight: bold;
+	font-size: 1.05em;
+}
+
+circle {
+	fill: black;
+}
+button {
+	background-color: white;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 1.4em;
+	padding: 0.2em;
+	margin: 1em 0.5em 0 0;
+	float: right;
+}
+.box {
+	border: 1em solid black;
+	padding: 0.4em;
+	margin: 0.2em;
+	text-align: center;
+}
+.border {
+	border: 1em solid black;
+	padding: 0.2em;
+	margin: 0.3em;
+}
+.boxn {
+	border: 0.2em solid #FF4C00;
+	border-radius: 20%;
+	padding: 0.2em;
+	margin: 0.2em;
+	text-align: center;
+}
+.boxo {
+	border: 1em solid black;
+	background: #FF4C00;
+	padding: 0.4em;
+	margin: 1em 0.2em;
+	text-align: center;
+}
+.boxb {
+	border: 1em solid black;
+	padding: 2em 0.4em;
+	margin: 2em 0.5em 5em 0.5em;
+	text-align: center;
+	border-top: 1.6em solid #FF4C00;
+}
+footer {
+	text-decoration: none;
+	text-align: center;
+	padding: 0.2em;
+	color: white;
+	background-color: black;
+	margin-top: 0.4em;
+}
+.base {
+	background-color: white;
+	border-radius: 25%;
+	padding: 0.2em;
+	font-size: 1.4em;
+	margin: 0.1em;
+}
+.top {
+	background-color: white;
+	border-radius: 25%;
+	padding: 0.2em;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 1em 0.4em 0 0;
+	float: right;
+}
+.block {
+	width: 100%; 
+	overflow: auto;
+	background: black;
+	padding: 0.7em;
+}
+.auto-grid1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+	grid-gap: 0 1%;
+}
+.auto-grid2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-gap: 0 1%;
+	color: black;
+}

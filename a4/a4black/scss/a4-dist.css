@@ -1,0 +1,194 @@
+/*Define root variables here using custom properties */
+/*Changes to color and primary size can be made here*/
+:root {
+	--primary-size : 1em;
+	--background-color : #D5C7C7;
+	--border-color : black;
+	--svgcircle-color : #D5C7C7;
+	--button-background-color : black;
+	--footer-background-color : black;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+} 
+
+/*Header content*/
+header {
+	border: var(--primary-size) solid var(--border-color);
+	width: 100%;
+	overflow: auto;
+	padding: calc(var(--primary-size) * 0.5) calc(var(--primary-size) * 0.5) var(--primary-size) calc(var(--primary-size) * 0.4);
+	margin-bottom: var(--primary-size);
+	height: 100%;
+	background: var(--background-color);
+}
+h1 {
+	width: 30%;
+	float: left;
+	background-color: var(--background-color);
+}
+
+/*Header nav bar*/
+nav {
+	font-size: calc(var(--primary-size) * 1.5);
+	font-weight: bold;
+	width: 70%;
+	float: left;
+	padding-top: calc(var(--primary-size) * 1.2);
+	background-color: var(--background-color);
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: right;
+	background-color: var(--background-color);
+}
+nav li {
+	display: inline;
+	padding-right: calc(var(--primary-size) * 1.3);
+	background-color: var(--background-color);
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+nav a:hover {
+	color: red;
+}
+article {
+	float: left;
+	width: 100%;
+}
+aside {
+	float: left;
+	width: 100%;
+}
+circle {
+	fill: var(--svgcircle-color);
+}
+footer {
+	text-align: center;
+	padding: calc(var(--primary-size) * 0.5);
+	color: white;
+	background-color: var(--footer-background-color);
+}
+.box {
+	border: calc(var(--primary-size) * 0.5) solid var(--border-color);
+	padding: calc(var(--primary-size) * 0.4);
+	margin: calc(var(--primary-size) * 0.2);
+	text-align: center;
+}
+.border {
+	border: calc(var(--primary-size) * 0.5) solid var(--border-color);
+	padding: calc(var(--primary-size) * 0.4);
+	margin: calc(var(--primary-size) * 0.2);
+}
+/*Media query for screen sizes 900px and below - common structure used for both tablet and mobilr*/
+@media only screen and (max-width: 900px) {
+	h1 {
+	width: 95%;
+	float: left;
+	background-color: var(--background-color);
+}
+nav {
+	font-size: calc(var(--primary-size) * 1.5);
+	font-weight: bold;
+	width: 95%;
+	float: left;
+	padding-top: calc(var(--primary-size) * 1.2);
+	background-color: var(--background-color);
+}
+} 
+/*Media query for mobile at 630px*/
+@media only screen and (max-width: 639px) {
+		.border {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-gap: 0 3%;
+		border: 0.3em solid var(--border-color));
+	}
+	.box {
+	border: calc(var(--primary-size) * 0.2) solid var(--border-color);
+	padding: calc(var(--primary-size) * 0.2);
+	margin: calc(var(--primary-size) * 0.1);
+	text-align: center;
+}
+}
+/*Media query for pointer/hover */
+@media (hover: none) and (pointer: coarse) {
+	nav a {
+	color: red;
+	-webkit-transform: scale(1, 3);
+	-ms-transform: scale(1, 3);
+	transform: scale(1, 3);
+	}
+}
+button {
+	background-color: var(--button-background-color);
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 1em;
+}
+img {
+	border: calc(var(--primary-size) * 0.5) solid var(--border-color);
+	border-radius: var(--primary-size);
+	padding: calc(var(--primary-size) * 0.5);
+}
+li {
+	list-style-type: square;
+}
+
+/*All remaining classes below are for grid display*/
+.display1-6 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0 0.5%;
+}
+.display1-5 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display1-4 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display1-3 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display1-2 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display2-3 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 2fr;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 0 1%;
+}
+

@@ -1,0 +1,7 @@
+header {
+	background-color: white;
+	border: solid blue;
+	width: 100%;
+	overflow: auto;
+	padding: 1em 0.5em 2em 0.4em;
+}

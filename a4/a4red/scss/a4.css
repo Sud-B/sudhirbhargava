@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+
+/*Header content*/
+header {
+	border: 1em solid black;
+	width: 100%;
+	overflow: auto;
+	padding: 0.5em 0.5em 1em 0.4em;
+	margin-bottom: 1em;
+	height: 100%;
+	background: #D5C7C7;
+}
+h1 {
+	width: 30%;
+	float: left;
+	background-color: #D5C7C7;
+}
+
+/*Header nav bar*/
+nav {
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 70%;
+	float: left;
+	padding-top: 1.2em;
+	background-color: #D5C7C7;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: right;
+	background-color: #D5C7C7;
+}
+nav li {
+	display: inline;
+	padding-right: 1.3em;
+	background-color: #D5C7C7;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+nav a:hover {
+	color: red;
+}
+article {
+	float: left;
+	width: 100%;
+}
+aside {
+	float: left;
+	width: 100%;
+}
+circle {
+	fill: #D5C7C7;
+}
+footer {
+	text-align: center;
+	padding: 0.5em;
+	color: white;
+	background-color: black;
+}
+.box {
+	border: 0.5em solid black;
+	padding: 0.4em;
+	margin: 0.2em;
+	text-align: center;
+}
+.border {
+	border: 0.5em solid black;
+	padding: 0.4em;
+	margin: 0.2em;
+}
+/*Media query for screen sizes 900px and below - common structure used for both tablet and mobilr*/
+@media only screen and (max-width: 900px) {
+	h1 {
+	width: 95%;
+	float: left;
+	background-color: #D5C7C7;
+}
+nav {
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 95%;
+	float: left;
+	padding-top: 0.5em;
+	background-color: #D5C7C7;
+}
+} 
+/*Media query for mobile at 630px*/
+@media only screen and (max-width: 639px) {
+		.border {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0 3%;
+		border: 0.3em solid black);
+	}
+	.box {
+	border: 0.2em solid black;
+	padding: 0.2em;
+	margin: 0.1em;
+	text-align: center;
+}
+}
+/*Media query for pointer/hover */
+@media (hover: none) and (pointer: coarse) {
+	nav a {
+	color: red;
+	transform: scale(1, 3);
+	}
+}
+button {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 1em;
+}
+img {
+	border: 0.5em solid black;
+	border-radius: 1em;
+	padding: 0.5em;
+}
+li {
+	list-style-type: square;
+}
+
+/*All remaining classes below are for grid display*/
+.display1-6 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0 0.5%;
+}
+.display1-5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display1-4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display1-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display1-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0 1%;
+}
+.display2-3 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 0 1%;
+}
+

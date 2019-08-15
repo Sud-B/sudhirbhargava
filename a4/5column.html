@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>A4 Design Stencil</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="scss/a4-dist.css">
+</head>
+<body>
+<header>
+	<h1>A4 Design Stencil</h1>
+	<button><a href="../wd.html">Return to Sudhir's Portfolio</a></button>
+		<nav>
+			<ul>
+                <li class="box" id="navpart1"><a href="index.html">Main page</a></li>
+                <li class="box" id="navpart2"><a href="instructions.html">Instructions</a></li>
+                <li class="box" id="navpart3"><a href="files.html">Files to use</a></li>
+            </ul>
+		</nav>
+</header>
+<section class="border">
+  <h2>Columns & Rows</h2>
+  <h3>Columns</h3>
+  <p>A webpage, or a section of a webpage, can easily be split into columns. The main page of this website has the entire section split into 6 columns (for the 6 blocks), then into 2 sections.  The second (instructions) page of this website is first split into 2 sections, with the right section split into 3 columns (over 4 rows).  A sample is also available to view below. There are many possibilities. The block of code below can be inserted into any part of the page you want to split into columns. A sample where a  half section of a webpage is further split into 3 columns comprising a box each is shown below. Sample code for the same is also provided.</p>
+  <button><a href="starter6.html">Columns Sample page</a></button>
+  <xmp>
+    <section class="display1-3">
+      <div class="box">
+        <p>THIS IS A BOX/COLUMN</p>
+      </div>
+      <div class="box">
+        <p>THIS IS A BOX/COLUMN</p>
+      </div>
+      <div class="box">
+        <p>THIS IS A BOX/COLUMN</p>
+      </div>
+    </section>
+  </xmp> 
+  <p>The code above has 2 relevant lines - the first and the last. The class saying "display1-3" is relevant to the number of columns. The structure to use is as follows:
+  For two equal columns - you would replace this with "display1-2"
+  For three equal columns - you would replace this with "display1-3"
+  For four equal columns - you would replace this with "display1-4"
+  For five equal columns - you would replace this with "display1-5"
+  For six equal columns - you would replace this with "display1-6"
+  For two columns with a 1/3 and 2/3 split - you would replace this with "display2-3"
+  </p>
+  <p>Also, the content within would need to align with the number of columns required. If there is a border surrounding the section with columns, the code for the border would come first, with the code for the columns in the next line (opposite at the bottom).</p>
+  <h3>Rows</h3>
+  <p>These are very easy to create. They happen by default in a single stack as is seen on the right hand side of the instructions page.  This is also shown in the sample page - 3 boxes on the right hand side aligning by default.</p>
+  <button><a href="starter7.html">Rows Sample page</a></button>
+  <P>The code to create these 3 rows is just the first and last ine for a border with code for three boxes within. A sample is shown below:
+    <xmp>
+    <section class="border">
+      <div class="box">
+        <p>THIS IS A BOX/ROW</p>
+      </div>
+      <div class="box">
+        <p>THIS IS A BOX/ROW</p>
+      </div>
+      <div class="box">
+        <p>THIS IS A BOX/ROW</p>
+      </div>
+    </section>
+    </xmp>
+    <p>To have two (or more) adjacent stacks of rows, you would just create two columns (or more) and these would align into adjacent rows by default.</p>
+</section>
+<footer>
+  <p>A4 Design Stencil. Copyright 2019. Sudhir Bhargava.</p>
+</footer> 
+</body>
+</html>

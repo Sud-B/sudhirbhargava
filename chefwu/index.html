@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chef Wu’s fantastic dumpling kitchen</title>
+<!-- Links to styling CSS and jquery for "I am here" -->
+  <link rel="stylesheet" href="css/Sud.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ </head>
+ <body id="part1">
+ <header>
+ <h1> Chef Wu’s fantastic dumpling kitchen <button><a href="../index.html">Return to Sudhir's Portfolio</a></button></h1>
+ </header>
+ <div id="navigation">
+ <ul id ="selections">
+                        <li id="navpart1"><a href="index.html">Introduction</a></li>
+                        <li id="navpart2"><a href="cwmenu.html">Menu</a></li>
+                        <li id="navpart3"><a href="cwgallery.html">Menu gallery</a></li>
+                        <li id="navpart4"><a href="cwlocation.html">Getting here</a></li>
+                        <li id="navpart5"><a href="cwonline.html">Online orders</a></li>
+                    </ul>
+	</div>
+ <!-- javascript to bind "I am here" plugin -->
+<script>
+$(document).ready(function(){
+  var mybodyid = $('body').attr('id');
+  var mynavid = '#nav' + mybodyid;
+  /* e.g. for 3.shtml:
+      mybodyid is 'part3'
+      mynavid  is '#navpart3'
+   */
+  $(mynavid).attr('id','iamhere');
+  console.log("I am at " +mynavid);
+});
+</script>
+  <p>Chef Wu is a Dumpling expert in China Taipei, with expertise in putting together unusual combinations of ingredients with beautiful balance of flavor. He has brought his wonderful expertise to New York city with this new restaurant.</p>
+  <p>Open 12.00 noon to 11.00 pm daily. For reservations, functions, catering & take away call us on 212-222-4242</p>
+  
+  <img src="image/1header.jpg" alt="image">
+<footer>
+         <p>Located at 3330 Broadway, NY 10031; Phone: 212-222-4242</p>
+</footer>
+</body>                         
+</html>

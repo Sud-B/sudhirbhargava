@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>A4 Design Stencil</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="scss/a4-dist.css">
+</head>
+<body>
+<header>
+	<h1>A4 Design Stencil</h1>
+	<button><a href="../wd.html">Return to Sudhir's Portfolio</a></button>
+		<nav>
+			<ul>
+                <li class="box" id="navpart1"><a href="index.html">Main page</a></li>
+                <li class="box" id="navpart2"><a href="instructions.html">Instructions</a></li>
+                <li class="box" id="navpart3"><a href="files.html">Files to use</a></li>
+            </ul>
+		</nav>
+</header>
+<section class="border">
+  <h2>Working with SVG Pattern/Image</h2>
+  <p>This framework provides the option to work with SVG images as filler just as the filler pattern seen on the right hand side of the main page.  SVG files are a lot smaller than image files in size so are a nimble and convenient replacement for images.  A sample of an SVH image can be seen below.</p>
+  <div class="box">
+  <h3>SAMPLE SVG FILLER DESIGN</h3>
+  <svg width="100%" height="100%">
+  <mask maskUnits="userSpaceOnUse" id="fade">
+  <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+  <stop offset ="0" style="stop-color: #FFFFFF" />
+    <stop offset ="1" style="stop-color: #000000" />
+    </linearGradient>
+    <rect fill="url(#gradient)" width="100%" height="100%" />
+    </mask>
+    <pattern id="pattern-circles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle mask="url(#fade)" cx="20" cy="20" r="20" />
+    </pattern>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)" />
+    </svg>
+  </div>
+  <h3>Instructions</h3>
+  <p>To a display an image in a particular part of a page, please identify the appropriate line in the html file being used and insert the following lines (block) of code.</p>
+  <xmp>
+    <div class="box">
+      <h3>SAMPLE SVG FILLER DESIGN</h3>
+      <svg width="100%" height="100%">
+      <mask maskUnits="userSpaceOnUse" id="fade">
+      <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset ="0" style="stop-color: #FFFFFF" />
+      <stop offset ="1" style="stop-color: #000000" />
+      </linearGradient>
+      <rect fill="url(#gradient)" width="100%" height="100%" />
+      </mask>
+      <pattern id="pattern-circles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle mask="url(#fade)" cx="20" cy="20" r="20" />
+      </pattern>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)" />
+      </svg>
+    </div>  
+  </xmp>
+  <p>In the above lines of code, the second line saying "SAMPLE SVG FILLER DESIGN" is optional.  You could replace these words with something else or remove this one line. The remaining lines are needed as they are. The content of the filler adapts to the size of the space or section on the webpage.  It is not set to function as background. It would display with a frame with a border. Customization options are available for the color of the circles (content) as well as border color in the next section.</p>
+</section>
+<footer>
+  <p>A4 Design Stencil. Copyright 2019. Sudhir Bhargava.</p>
+</footer> 
+</body>
+</html>
