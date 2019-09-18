@@ -1,7 +1,7 @@
 .initial * {
   all: initial;
 }
-
+/*Initial settings*/
 html {
   box-sizing: border-box;
 }
@@ -53,6 +53,7 @@ h4 {
 	color: white;
 	padding: 0.5em;
 }
+/*Navigation content*/
 nav {
 	width: 75%;
 	display: inline-block;
@@ -80,6 +81,7 @@ nav a:hover {
 	background-color: black;
 	transform: scaleY(1.8);	
 }
+/*Content using id tags*/
 .block {
 	width: 20%;
 	background-color: black;
@@ -91,6 +93,7 @@ nav a:hover {
 .intro {
 	margin: 12em 1em 5.5em 1em;
 }
+/*Media queries*/
 @media only screen and (max-width: 900px) {
   nav {
 	width: 75%;
@@ -107,6 +110,7 @@ h4 {
 	text-align: left;
 }
 }
+/*All other content*/
 article {
 	float: left;
 	width: 100%;
@@ -176,6 +180,7 @@ button {
 	text-align: center;
 	border-top: 1.6em solid #FF4C00;
 }
+/*Footer content*/
 footer {
 	text-decoration: none;
 	text-align: center;
