@@ -35,7 +35,7 @@ function setup() {
   let header1 = createElement("h1", 'Bunny POP!');
   let header2 = createElement("h2", 'Instructions');
   let button1 = createButton("Return to Sudhir's portfolio", )
-  button.position(900, 0);
+  button1.position(900, 0);
   button.mousePressed(changeBG);
   header1.style('background-color', '#FDF867');
   header2.style('background-color', '#FDF867');
