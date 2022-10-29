@@ -93,23 +93,6 @@ nav a:hover {
 .intro {
 	margin: 12em 1em 5.5em 1em;
 }
-/*Media queries*/
-@media only screen and (max-width: 900px) {
-  nav {
-	width: 75%;
-	display: inline-block;
-	font-size: 0.8em;
-}
-.auto-grid2 {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	grid-gap: 0 1%;
-	color: black;
-}
-h4 {
-	text-align: left;
-}
-}
 /*All other content*/
 article {
 	float: left;
@@ -222,3 +205,18 @@ footer {
 	grid-gap: 0 1%;
 	color: black;
 }
+/*Media queries*/
+@media only screen and (max-width: 900px) {
+  nav {
+	width: 75%;
+	display: inline-block;
+	font-size: 0.8em;
+}
+.auto-grid2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(85%, 1fr));
+	grid-gap: 0 1%;
+	color: black;
+}
+}
+
