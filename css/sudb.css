@@ -16,7 +16,7 @@ header {
 	position: fixed;
 	overflow: auto;
 	background: black;
-	padding: 0.7em;
+	padding: 0.5em;
 }
 h1:hover {
 	color: #FF4C00;
@@ -55,10 +55,10 @@ h4 {
 }
 /*Navigation content*/
 nav {
-	width: 75%;
+	width: 60%;
 	display: inline-block;
-	font-size: 1.3em;
-	padding-top: 0.5em;
+	font-size: 1.45em;
+	padding-top: 0.1em;
 	float: right;
 	background-color: black;
 }
@@ -144,9 +144,9 @@ button {
 }
 .boxn {
 	border: 0.2em solid #FF4C00;
-	border-radius: 20%;
+	border-radius: 10%;
 	padding: 0.2em;
-	margin: 0.2em;
+	margin: 0.2em 1em 0.2em 0.2em;
 	text-align: center;
 }
 .boxo {
@@ -210,8 +210,8 @@ footer {
   nav {
 	width: 75%;
 	display: inline-block;
-	font-size: 0.8em;
-}
+	font-size: 1em;
+}  
 .auto-grid2 {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(85%, 1fr));
